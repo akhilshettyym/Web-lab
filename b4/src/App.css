@@ -1,0 +1,18 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Ensure bullets are displayed inside the container */
+}
+
+li {
+  text-align: left;
+  margin: 5px 0;
+}

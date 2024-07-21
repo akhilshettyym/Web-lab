@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Form</title> 
+    <script type="text/javascript">
+        function greetUser() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            alert("Hello " + firstName + " " + lastName + "!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Greeting Form</h1>
+    <form onsubmit="greetUser(); return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <button type="submit">Greet Me</button> 
+    </form>
+</body>
+</html>

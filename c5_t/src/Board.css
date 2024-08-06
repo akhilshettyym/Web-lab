@@ -1,0 +1,30 @@
+.board {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); 
+    gap: 1px; 
+  }
+  
+  .square {
+    height: 80px;
+    width: 80px;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border: 1px solid #1b0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    margin: 0;
+    outline: none; 
+  }
+  
+  .status {
+    margin-bottom: 10px; 
+  }
+  

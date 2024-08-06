@@ -14,5 +14,4 @@ class JokeList extends Component {
     );
   }
 }
-
 export default JokeList;

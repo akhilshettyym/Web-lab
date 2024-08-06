@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeting form</title>
+    <title>Greeting Form</title>
     <script type = "text/javascript">
         function greetUser(){
-            var firstName = document.getElementById("fisrtName").value;
+            var firstName = document.getElementById("firstName").value;
             var lastName = document.getElementById("lastName").value;
-            alert("Hello"+firstName+""+lastName+"!");
+            alert("Hello "+firstName+" "+lastName+" !");
         }
     </script>
 </head>
 <body>
-    <h1>Greeting form</h1>
-    <form onsubmit="greetUser(); return false;" >
-        <label for="firstName">First Name</label>
-        <input type="text" id="fisrtName" name="firstName"><br><br>
-        <label for="lastName">Last Name</label>
+    <h1>Greeting Form</h1>
+    <form onsubmit="greetUser(); return false;">
+        <label for="firstName">First Name </label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="lastName">Last Name </label>
         <input type="text" id="lastName" name="lastName"><br><br>
-        <button Type="submit">Greet me manh</button>
+        <button type="submit">Greet ME</button>
     </form>
 </body>
 </html>

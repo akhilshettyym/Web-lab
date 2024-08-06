@@ -1,21 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country capital</title>
-    <link rel="stylesheet" href="B2.css">
-</head>
+<html>
+<title>
+    Capitals of countries
+</title>
+<style>
+    p {
+        color: red;
+        font-weight: bold;
+        font-size: 36;
+    }
+
+    #capital {
+        color: green;
+        font-size: 32;
+        padding-top: 15px;
+    }
+</style>
+<script language="javascript">
+    function capital() {
+        var count = document.forms["form"].country.value;
+        var capital = "Please select any country";
+        if (count == "India") {
+            capital = "New Delhi";
+        }
+        if (count == "China") {
+            capital = "Beijing";
+        }
+        if (count == "USA") {
+            capital = "Washington D.C.";
+        }
+        if (count == "Russia") {
+            capital = "Moscow";
+        }
+        if (count == "Japan") {
+            capital = "Tokyo";
+        }
+        if (count == "select") {
+            capital = "Please select a country";
+        }
+        document.getElementById("capt").innerHTML = capital;
+    }
+</script>
+
 <body>
-    <h2>Select a Country</h2>
-    <select class="name" id="capital" onchange="showCapital()">
-        <option value="Select a Country">Select a Country</option>
-        <option value="India">India</option>
-        <option value="UAE">UAE</option>
-        <option value="Japan">Japan</option>
-        <option value="Australia"></option>
-    </select>
-    <p>Capital is:<span id="capital"></span></p>
-        <script src="B2.js"></script>
+    <form name="form">
+        <br>
+        <center>
+            Select a country: <select name="country" onchange=capital()>
+                <option value="select">--SELECT</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="Japan">Japan</option>
+            </select><br>
+            <div id="capital">Capital is: </div>
+            <p id="capt"></p>
+        </center>
+    </form>
 </body>
+
 </html>
